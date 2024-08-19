@@ -9,7 +9,7 @@ import { SelectedPokemon } from "./domain/commonDomain";
 import HeaderBar from "./components/header";
 
 function App() {
-  const [pokemonSlice, setPokemonSlice] = useState(pokemonData);
+  const [pokemonSlice] = useState(pokemonData);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedPokemon, setSelectedPokemon] = useState<SelectedPokemon | null>(null)
 
